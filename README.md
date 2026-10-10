@@ -1,6 +1,6 @@
 # Multi-Quality Training for Robust YOLO Object Detection in CCTV Systems
 
-Files and guides to reproduce the experiments of the paper "No-Trade-Off Quality Robustness: Simultaneous Multi-Quality Training Improves Low-Quality Object Detection Without Sacrificing High-Quality Performance", IEEE Access (under review/revision)
+Files and guides to reproduce the experiments of the paper "Simultaneous Multi-Quality Training for Improving Low-Quality Object Detection in Aerial Imagery", IEEE Access (under review/revision)
 
 ## 📝 Authors
 Mukeun Choi_1 and Taeyeon Oh_2*
