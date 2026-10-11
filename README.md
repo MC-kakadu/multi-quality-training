@@ -87,6 +87,16 @@ fitness = 0.1 × mAP50 + 0.9 × mAP50-95
 ```
 not by mAP50 alone. Using mAP50 alone to identify the best epoch from results.csv will, in some cases, select a different epoch than the one Ultralytics actually saved as best.pt. scripts/extract_best_epoch.py implements the correct fitness-based selection and includes a validation check against Ultralytics' own logged best-epoch value.
 
+### Preprocessing for Multi-Quality Level images
+
+For a quality level q ∈ {0.2, 0.4, 0.6, 0.8, 1.0} and an image of size W×H, the following steps are applied in a fixed order with OpenCV-Python (v5.0.0.93): 
+(i) the image is downsampled to (⌊W·q⌋, ⌊H·q⌋) pixels with bicubic interpolation (`cv2.INTER_CUBIC`; skipped for q = 1.0); 
+(ii) it is upsampled back to W×H with the same interpolation, so that only the effective resolution is reduced while the image size is unchanged; 
+(iii) the result is JPEG-encoded with `cv2.imencode` at quality factor 100·q and decoded with `cv2.imdecode`; and 
+(iv) the decoded array is written to disk as a JPEG file with the same quality factor (`cv2.imwrite`), so that the stored file has passed through two JPEG encoding passes.
+
+The procedure contains no randomness and is applied identically to every image, so the same source image always yields the same degraded file; annotations are shared across quality levels. The resizing of the stored images to 640 pixels on the long side with gray (114, 114, 114) padding is performed afterwards by the detector's data loader at training and evaluation time and is not part of the degradation.
+For the random-quality baselines (B2, B3), q is drawn independently for every image copy from a uniform distribution U(0.15, 1.0) using NumPy with a fixed seed (42). The JPEG quality factor is round(100·q) for q ≥ 0.2, which is equivalent to piecewise-linear interpolation between the five reference points, and 20 for q < 0.2, while the resolution scale remains q.
 
 ---
 
