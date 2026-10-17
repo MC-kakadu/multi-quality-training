@@ -17,7 +17,6 @@ Mukeun Choi_1 and Taeyeon Oh_2*
 | `analysis` | Analysis Results |
 | `evaluation` | Evaluation Results |
 | `experiments` | Experiments Results |
-| `models` | Best pretrainined Models (Standard & Multi-Quality) by architecture and baseline |
 | `scripts` | Experiments Code |
 
 ### 🔍 Experiment Code in scripts path
