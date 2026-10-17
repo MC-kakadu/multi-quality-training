@@ -125,7 +125,7 @@ All experiments (Standard, Multi-Quality, B1/B2/B3, and both additional architec
 | Warmup Momentum | 0.8 |
 | Warmup bias Learning Rate | 0.1 |
 | Workers | 8 |
-| Random Seed | 42 |
+| Random Seed | 0, 42, 123 |
 | Mixed Precision | Enabled (AMP) |
 
 ## ✅ Raw Data Source
