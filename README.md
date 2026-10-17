@@ -79,6 +79,10 @@ We provide pre-trained models for reproducibility: [LINK](https://drive.google.c
 | YOLOv8m-Baseline1 | 42 | Q100 only (5x, augmentation) | 0.167 | 0.372 | 4.08 |
 | YOLOv8m-Baseline2 | 42 | Random Quality (1x, augmentation) | 0.239 | 0.347 | 7.62 |
 | YOLOv8m-Baseline3 | 42 | Random Quality (5x, augmentation) | 0.256 | 0.357 | 8.56 |
+| RT-DETR-Standard | 0 | Q100 only (1x, no degradation) | 0.144 | 0.379 | 3.56 |
+| RT-DETR-Multi-Quality | 0 | Q20-Q100 (5x, augmentation) | 0.256 | 0.377 | 7.52 |
+| Faster R-CNN Standard | 0 | Q100 only (1x, no degradation) | 0.091 | 0.197 | 4.20 |
+| Faster R-CNN Multi-Quality | 0 | Q20-Q100 (5x, augmentation) | 0.125 | 0.175 | 8.38 |
 
 ## ⚠️ Important Implementation Notes
 1) Degradation simulation: resolution downsampling + JPEG compression (jointly applied)
