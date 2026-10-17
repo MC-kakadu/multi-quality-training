@@ -147,9 +147,10 @@ All experiments (Standard, Multi-Quality, B1/B2/B3, and both additional architec
 
 ## ✅ Raw Data Source
 
-Thank you to team VisDrone (Zhu et al., 2018; Zhu et al., 2021); Machine Learning and Data Mining Lab at Tianjin University in China for providing the data.
-The VisDrone dataset (raw-data) used in this study is available at the following link.
+Thank you to team VisDrone (Zhu et al., 2018; Zhu et al., 2021); Machine Learning and Data Mining Lab at Tianjin University in China and team UA-DETRAC (L. Wen et al., 2020) for providing the data.
+The VisDrone and UA-DETRAC datasets (raw-data) used in this study are available at the following links.
 * Dataset Link: https://github.com/VisDrone/VisDrone-Dataset
+* Dataset Link: https://www.kaggle.com/datasets/bratjay/ua-detrac-orig
 
 ## 📝 License
 
