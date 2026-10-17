@@ -113,6 +113,8 @@ For the random-quality baselines (B2, B3), q is drawn independently for every im
 ### Hyperparameters
 All experiments (Standard, Multi-Quality, B1/B2/B3, and both additional architectures) use identical hyperparameters; the only varying factor is the training data configuration, to isolate the effect of quality-level design from confounding training variables.
 
+#### For YOLO-family
+
 | Parameter | Value |
 |-----------|-------|
 | Input Size | 640×640 |
@@ -125,8 +127,20 @@ All experiments (Standard, Multi-Quality, B1/B2/B3, and both additional architec
 | Warmup Momentum | 0.8 |
 | Warmup bias Learning Rate | 0.1 |
 | Workers | 8 |
-| Random Seed | 0, 42, 123 |
+| Random Seed | 0, 42, 123 (n=3) |
 | Mixed Precision | Enabled (AMP) |
+
+#### For Non-YOLO architectures
+
+|           | RT-DETR-L | Faster R-CNN |
+| --------- | --------- | ------------ |
+| Framework | Ultralytics RTDETR('rtdetr-l.pt') | Torchvision, weights='DEFAULT' |
+| Epochs/patience | 100/50 | 40/8 |
+| Batch/images | 16/640 | 8/640(min=max=640) |
+| Optimizer | AdamW, lr0 1e-4, momentum 0.9, wd 1e-4, warmup 3ep | SGD, lr0.005, momentum 0.9, wd 5e-4, warmup 500iter, StepLR(15,0.1) |
+| Best-epoch Criteria | Ultralytics | val(Q100) mAP50 |
+| Validation | Ultralytics 'val' | torchmetrics |
+| Seed | 0 (single run) | 0 (single run)
 
 ## ✅ Raw Data Source
 
