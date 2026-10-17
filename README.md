@@ -71,15 +71,15 @@ We provide pre-trained models for reproducibility: [LINK](https://github.com/MC-
 
 | Model | Seed | Training Data | mAP50@Q20 | mAP50@Q100 | Robustness Score |
 |-------|------|---------------|-----------|------------|------------------|
-| YOLOv8m-Standard | 42 (n=1) | Q100 only (1x, no degradation) | 0.150 | 0.354 | 3.89 |
-| **YOLOv8m-Multi-Quality** | **42 (n=1)** | **Q20-Q100 (5x, augmentation)** | **0.263** | **0.362** | **8.84** |
-| YOLOv8n-Standard | 42 (n=1) | Q100 only (1x, no degradation) | 0.138 | 0.272 | 4.63 |
-| YOLOv8n-Multi-Quality | 42 (n=1) | Q20-Q100 (5x, augmentation) | 0.196 | 0.271 | 8.72 |
-| YOLO11m-Standard | 42 (n=1) | Q100 only (1x, no degradation) | 0.147 | 0.371 | 3.67 |
-| YOLO11m-Multi-Quality | 42 (n=1) | Q20-Q100 (5x, augmentation) | 0.271 | 0.376 | 8.62 |
-| YOLOv8m-Baseline1 | 42 (n=1) | Q100 only (5x, augmentation) | 0.167 | 0.372 | 4.08 |
-| YOLOv8m-Baseline2 | 42 (n=1) | Random Quality (1x, augmentation) | 0.239 | 0.347 | 7.62 |
-| YOLOv8m-Baseline3 | 42 (n=1) | Random Quality (5x, augmentation) | 0.256 | 0.357 | 8.56 |
+| YOLOv8m-Standard | 42 | Q100 only (1x, no degradation) | 0.150 | 0.354 | 3.89 |
+| **YOLOv8m-Multi-Quality** | **42** | **Q20-Q100 (5x, augmentation)** | **0.263** | **0.362** | **8.84** |
+| YOLOv8n-Standard | 42 | Q100 only (1x, no degradation) | 0.138 | 0.272 | 4.63 |
+| YOLOv8n-Multi-Quality | 42 | Q20-Q100 (5x, augmentation) | 0.196 | 0.271 | 8.72 |
+| YOLO11m-Standard | 42 | Q100 only (1x, no degradation) | 0.147 | 0.371 | 3.67 |
+| YOLO11m-Multi-Quality | 42 | Q20-Q100 (5x, augmentation) | 0.271 | 0.376 | 8.62 |
+| YOLOv8m-Baseline1 | 42 | Q100 only (5x, augmentation) | 0.167 | 0.372 | 4.08 |
+| YOLOv8m-Baseline2 | 42 | Random Quality (1x, augmentation) | 0.239 | 0.347 | 7.62 |
+| YOLOv8m-Baseline3 | 42 | Random Quality (5x, augmentation) | 0.256 | 0.357 | 8.56 |
 
 ## ⚠️ Important Implementation Notes
 1) Degradation simulation: resolution downsampling + JPEG compression (jointly applied)
