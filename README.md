@@ -67,7 +67,7 @@ Mukeun Choi_1 and Taeyeon Oh_2*
 
 ## 💾 Pre-trained Models
 
-We provide pre-trained models for reproducibility: [LINK](https://github.com/MC-kakadu/multi-quality-training/tree/main/models)
+We provide pre-trained models for reproducibility: [LINK](https://drive.google.com/drive/folders/1WzTsNgPza2VpY1g-cfxURnvbeuj5J-kF?usp=sharing)
 
 | Model | Seed | Training Data | mAP50@Q20 | mAP50@Q100 | Robustness Score |
 |-------|------|---------------|-----------|------------|------------------|
