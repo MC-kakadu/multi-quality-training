@@ -31,7 +31,10 @@ Mukeun Choi_1 and Taeyeon Oh_2*
 | `05_Evaluation.py` | Evaluation |
 | `06_Visualization.py` | Figure & Table Generation |
 | `07_Fair_baseline_comparison.py` | Baseline Comparison (Training, Evaluation, and Visualization) |
-| `08_Architecture_comparison.py` | Architecture Comparison (Training, Evaluation, and Visualization) |
+| `08_Architecture_comparison.py` | Architecture Comparison for YOLO-family (Training, Evaluation, and Visualization) |
+| `09_Architecture_comparison(Non-YOLO).py` | Architecture Comparison for Non-YOLO models (Training, Evaluation, and Visualization) |
+| `10_Multi_seed_replication.py` | Multi-seed Comparison (Training, Evaluation, and Visualization) |
+| `11_UA-DETRAC_validation.py` | Evaluation on Real-world footage using UA-DETRAC dataset |
 
 ### 📚 Reference File
 
