@@ -8,6 +8,7 @@ Mukeun Choi_1 and Taeyeon Oh_2*
 * 1 : Seoul AI School, aSSIST University, Seoul, Republic of Korea
 * 1 : SDG Management School, Geneva, Swiss
 * 2 : Seoul AI School, aSSIST University, Seoul, Republic of Korea
+* 2 : Dong-A University, 225 Gudeok-Ro, Seo-gu, Busan 49236, Republic of Korea
 * \* : Corresponding Author
 
 ## 📦 File Path
