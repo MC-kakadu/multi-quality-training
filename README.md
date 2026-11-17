@@ -1,4 +1,4 @@
-# Multi-Quality Training for Robust YOLO Object Detection in CCTV Systems
+# Multi-Quality Training for Improving YOLO Object Detection
 
 Files and guides to reproduce the experiments of the paper: 
 
