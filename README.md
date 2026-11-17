@@ -163,3 +163,7 @@ The VisDrone and UA-DETRAC datasets (raw-data) used in this study are available 
 This project is licensed under the MIT License.
 
 **Note**: YOLOv8 is licensed under AGPL-3.0. Please refer to [Ultralytics License](https://github.com/ultralytics/ultralytics/blob/main/LICENSE) for commercial use.
+
+## 📑 Cite this Article
+
+Choi, M., Oh, T. IEEE Access (2026). https://doi.org/10.1109/ACCESS.2026.3755349
