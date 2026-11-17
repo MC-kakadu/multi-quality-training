@@ -1,6 +1,6 @@
 # Multi-Quality Training for Robust YOLO Object Detection in CCTV Systems
 
-Files and guides to reproduce the experiments of the paper "Simultaneous Multi-Quality Training for Improving Low-Quality Object Detection in Aerial Imagery", IEEE Access (under review/revision)
+Files and guides to reproduce the experiments of the paper "Simultaneous Multi-Quality Training for Improving Low-Quality Object Detection in Aerial Imagery", IEEE Access
 
 ## 📝 Authors
 Mukeun Choi_1 and Taeyeon Oh_2*
